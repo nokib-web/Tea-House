@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sharmi Card</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-pink-600 flex items-center justify-center h-screen">
+
+  <div class="card animate-spin bg-purple-300 p-8 rounded-2xl shadow-4xl text-center max-w-sm transition-colors duration-1000 hover:bg-purple-400 ">
+    <h1 class="text-3xl font-bold text-purple-900 mb-4 animate-pulse">LOVE YOU SHARMIN💖</h1>
+    <p class="text-red-700 font-extrabold mb-6">LOVE ME LIKE YOU DO</p>
+    <button class="bg-pink-800 animate-bounce text-white px-6 py-2 rounded-lg hover:bg-pink-700 transition transform hover:scale-110 focus-within:scale-110 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-offset-2">
+      Smile 😊
+    </button>
+  </div>
+
+  <script>
+    const card = document.querySelector('.card');
+    const btn = document.querySelector('button');
+    
+    btn.addEventListener('click', () => {
+      card.classList.toggle('bg-pink-100');
+    });
+  </script>
+
+</body>
+</html>
